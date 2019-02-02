@@ -95,7 +95,6 @@ count.times do |n|
 end
 
 # Write out to a file
-# file_name = File.basename(source_uri) unless options[:filename]
 file_name = options[:filename] ? options[:filename] : File.basename(source_uri)
 open(file_name, "wb") do |fout|
   fout.write partial_content
